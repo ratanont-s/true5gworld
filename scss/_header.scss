@@ -1,0 +1,64 @@
+header {
+    .nav {
+        &-item {
+            border-bottom: 1px solid $offcanvas-color;
+        }
+
+        &-link {
+            color: $offcanvas-color;
+            font-size: 25px;
+            text-transform: uppercase;
+        }
+
+        &-close {
+            text-align: right;
+            padding-top: 15px;
+            margin-bottom: 40px;
+
+            button {
+                color: $offcanvas-color;
+            }
+        }
+    }
+
+    @media (max-width: 991.98px) {
+        .offcanvas-collapse {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 100%;
+            width: 90%;
+            padding-right: 1rem;
+            padding-left: 1rem;
+            overflow-y: auto;
+            visibility: hidden;
+            background-color: $offcanvas-bg;
+            transition: visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
+            transition: transform .3s ease-in-out, visibility .3s ease-in-out;
+            transition: transform .3s ease-in-out, visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
+
+            &.open {
+                visibility: visible;
+                -webkit-transform: translateX(-100%);
+                transform: translateX(-100%);
+            }
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        .nav {
+            &-item {
+                border-bottom-width: 0;
+            }
+
+            &-link {
+                font-family: $font-family-special;
+                color: white;
+            }
+
+            &-close {
+                display: none;
+            }
+        }
+    }
+}

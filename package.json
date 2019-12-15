@@ -1,0 +1,15 @@
+{
+  "name": "true5gworld",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/rathanont/true5gworld.git",
+  "author": "rathanont <rathanont.s@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "rfs": "^9.0.2",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^5.2.1"
+  }
+}

@@ -1,0 +1,32 @@
+footer {
+    background: $footer-bg;
+    color: $footer-color;
+    margin-top: auto;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 40px 0;
+
+    >.container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer {
+        &-logo {
+            @include margin-right(30px);
+
+            img {
+                @include media-breakpoint-down(sm) {
+                    width: 50px;
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: 42px;
+        line-height: 36px;
+        padding: 60px 0 80px;
+    }
+}
