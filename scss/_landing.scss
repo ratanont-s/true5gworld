@@ -8,11 +8,8 @@ section {
     background: url('../images/bg-01.jpg') no-repeat center top/100% auto;
     color: white;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     min-height: 100vh;
+    padding: 100px 0 30px;
 
     .image {
         margin-bottom: 12px;
@@ -145,7 +142,7 @@ section {
                 content: '';
                 position: absolute;
                 top: 182px;
-                left: -80px;
+                left: -130px;
                 width: 125px;
                 height: 125px;
                 background: url('../images/box-left.png') no-repeat center center/cover;
@@ -281,6 +278,7 @@ section {
     }
 
     @include media-breakpoint-up(lg) {
+        padding: 30px 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -432,7 +430,20 @@ section {
         }
     }
 
+    @keyframes text {
+        from {
+            opacity: 0;
+            transform: translateY(100%);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
     .slick {
+
         &-item {
             padding: 0 15px;
 
@@ -501,6 +512,21 @@ section {
                 &::before {
                     display: none;
                 }
+            }
+        }
+
+        &-arrow {
+            position: absolute;
+            top: 40%;
+            transform: translateY(-40%);
+            z-index: 1;
+
+            &.prev {
+                left: 0;
+            }
+
+            &.next {
+                right: 0;
             }
         }
 
