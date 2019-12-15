@@ -80,5 +80,6 @@ $(".slick").on("afterChange", function (event, slick, currentSlide, nextSlide) {
 });
 
 AOS.init({
-    duration: 1000
+    delay: 300,
+    duration: 2000
 });

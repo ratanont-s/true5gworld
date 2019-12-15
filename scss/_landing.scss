@@ -10,12 +10,15 @@ section {
     text-align: center;
     min-height: 100vh;
     padding: 100px 0 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     .image {
         margin-bottom: 12px;
 
         img {
-            max-width: 270px;
+            max-width: 100%;
         }
     }
 
@@ -63,7 +66,6 @@ section {
     align-items: center;
     background: url('../images/bg-02-lg.jpg') no-repeat center top/auto;
     padding: 1.5rem 0;
-    padding-top: 0;
 
     .video {
         max-width: 945px;
