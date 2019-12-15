@@ -2,6 +2,10 @@ section {
     @include media-breakpoint-up(lg) {
         min-height: 100vh;
     }
+
+    @media (min-width: 1920px) {
+        min-height: unset;
+    }
 }
 
 #sec-one {
@@ -86,6 +90,7 @@ section {
     }
 
     @include media-breakpoint-up(lg) {
+        background: url('../images/bg-02-lg.jpg') no-repeat center top/cover;
 
         .video {
             margin-bottom: 58px;
