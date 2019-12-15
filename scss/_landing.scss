@@ -522,6 +522,8 @@ section {
             top: 40%;
             transform: translateY(-40%);
             z-index: 1;
+            background-color: transparent;
+            border-width: 0;
 
             &.prev {
                 left: 0;
