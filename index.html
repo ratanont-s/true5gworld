@@ -15,7 +15,7 @@
 
 <body>
     <!-- Header -->
-    <header class="fixed-top">
+    <header class="fixed-top" id="header">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="#">
@@ -563,6 +563,20 @@
         }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.4.0/dist/lazyload.min.js"></script>
+    <script>
+        // When the user scrolls down 20px from the top of the document, slide down the navbar
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("header").style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+            } else {
+                document.getElementById("header").style.backgroundColor = "transparent";
+            }
+        }
+    </script>
 </body>
 
 </html>
