@@ -10,7 +10,7 @@
     "aos": "^3.0.0-beta.6",
     "bootstrap": "^4.4.1",
     "fullpage.js": "^3.0.8",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "rfs": "^9.0.2",
     "slick-carousel": "^1.8.1",
     "swiper": "^5.2.1"
